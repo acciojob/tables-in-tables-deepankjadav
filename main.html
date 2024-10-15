@@ -5,10 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
+	  <style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+			border: 1px solid black;
+        }
+		  td,th{
+			  text-align: center;
+			  border: 1px solid black;
+			  
+		  }
+    </style>
   </head>
   <body>
     <table style="width: 100%; height: 100%">
       <!-- Your code here -->
+		<tr>
+			<td>
+				<table>
+					<thead>
+						<th colspan=2>
+							Nested Table 2
+						</th>
+						<tbody>
+							<tr>
+								<th>Column 1</th>
+								<th>Column 2</th>
+							</tr>
+							<tr>
+								<td>abc</td>
+								<td>def</td>
+							</tr>
+						</tbody>
+					</thead>
+				</table>
+			</td>
+			<td>
+				<table>
+					<thead>
+						<th colspan=2>Nested Table 1</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan=2><ul>
+								<li>List item</li>
+								<li>List item</li>
+								<li>List item</li>
+							</ul></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table>
+					<thead>
+						<th colspan=2>
+							Nested Table 3
+						</th>
+						<tbody>
+							<tr>
+								<td><a href="www.acciojob.com">Nested Table</a></td>
+								<td>Demo Continued</td>
+							</tr>
+						</tbody>
+			</table>
+			</td>
+			<td>
+				<table>
+					<thead>
+						<th colspan=2>Nested Table 4</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan=2 style="background-color: black; color: white;">HTML</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
     </table>
   </body>
 </html>
